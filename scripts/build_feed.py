@@ -53,7 +53,7 @@ def main():
                         records[key] = item
                 except (ValueError, InvalidOperation) as exc:
                     raise ValueError(f'{path.name}:{line}: {exc}') from exc
-    if not records or len(records) > 5000:
+    if len(records) > 5000:
         raise ValueError('Invalid record count; existing feed retained')
     output = io.StringIO(newline='')
     writer = csv.DictWriter(output, fieldnames=FIELDS, lineterminator='\n')
