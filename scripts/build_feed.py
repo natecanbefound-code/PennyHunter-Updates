@@ -22,9 +22,9 @@ def valid_gtin(value):
 
 def main():
     records = {}
-    files = sorted((ROOT / 'incoming').glob('*.csv'))
+    files = sorted((ROOT / 'approved').glob('*.csv'))
     if not files:
-        raise ValueError('No CSVs in incoming/; leaving existing feed unchanged')
+        raise ValueError('No CSVs in approved/; leaving existing feed unchanged')
     for path in files:
         with path.open(newline='', encoding='utf-8-sig') as handle:
             reader = csv.DictReader(handle)
