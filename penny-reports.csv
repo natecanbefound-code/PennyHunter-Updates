@@ -1,2 +1,2 @@
-retailer,upc,product_name,price,status,report_date,source
+retailer,upc,product_name,price,status,date,source
 Dollar General,012345678905,PennyHunter GitHub Sync Test,0.01,reported_penny,2026-10-22,PennyHunter TEST DATA
