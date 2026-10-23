@@ -1,2 +1,2 @@
-retailer,upc,product,price,status,date,source
-Dollar General,012345678905,PennyHunter GitHub Sync Test,0.01,reported_penny,2026-10-22,PennyHunter TEST DATA
+upc,retailer,status,price,date,source,product
+012345678905,Dollar General,reported_penny,0.01,2026-10-22,PennyHunter TEST DATA,PennyHunter GitHub Sync Test
